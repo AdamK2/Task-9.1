@@ -1,14 +1,17 @@
-var a = 2;
-var b = 3;
-var a = prompt("Type value a");
-var b = prompt("Type value b");
-var value = (a * a) - (2 * a * b) - (b * b);
-console.log("Result is: "+ value); 
-
-if (value > 0) {
-    console.log("Result positive")
-} else if (value < 0) {
-    console.log("Result negative")
-} else {
-    console.log("Result equals zero")
+function getTriangleArea(a, h) {	
+	if ( (a <= 0) || (h <= 0) ) {		
+        console.log("Input data incorect")
+		}	
+	/* else {
+		var value = a*h/2;
+		console.log("Result is: "+ value); 
+		} */
+	else {	
+		console.log("Result is: "+ (a*h/2))
+		} 		
 }
+var triangle1Area = getTriangleArea(10, 15);
+var triangle1Area = getTriangleArea(6, -5);
+var triangle1Area = getTriangleArea(2, 7);
+var triangle1Area = getTriangleArea(0, 5);
+
